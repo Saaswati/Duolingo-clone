@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white text-[#4B4B4B] antialiased;
+  }
+  :focus-visible {
+    @apply outline-none ring-4 ring-[#1CB0F6]/40;
+  }
+}
+
+@layer components {
+  .btn-3d {
+    @apply relative select-none rounded-2xl border-b-4 px-5 py-3 text-center
+           text-[15px] font-bold uppercase tracking-wide transition-all
+           duration-75 active:translate-y-[3px] active:border-b-[1px]
+           disabled:cursor-not-allowed;
+  }
+}
+
+/* Dark mode */
+.dark body {
+  background-color: #131F24;
+  color: #d4d4d4;
+}
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
