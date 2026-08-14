@@ -1,10 +1,6 @@
 # Duolingo Clone
 
-A working recreation of Duolingo's learning experience: four language courses
-you can switch between, a winding skill path with lock/unlock progression, a
-lesson player with five exercise types, and the gamification layer — hearts,
-XP, streaks, crowns, a daily goal and a leaderboard — that turns a quiz into
-something you come back to.
+A full-stack recreation of Duolingo's learning experience: a winding skill path with lock/unlock progression, a lesson player with five exercise types, and the gamification layer — hearts, XP, streaks, crowns, a daily goal and a leaderboard — that turns a quiz into something you come back to.
 
 **Live demo:** https://duolingo-clone-amber.vercel.app
 **Repository:** https://github.com/Saaswati/Duolingo-clone
