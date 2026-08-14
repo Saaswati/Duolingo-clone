@@ -215,7 +215,7 @@ says so explicitly rather than showing a silent spinner.
 
 ## What's mocked
 
-
+Gems, the Super subscription, friends and speaking exercises are placeholders; the leaderboard's rivals are seeded with fixed XP. Every one of these, and the reasoning behind where the line was drawn, is written up in [ASSUMPTIONS.md](./ASSUMPTIONS.md).
 
 ---
 
