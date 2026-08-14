@@ -149,8 +149,6 @@ Full interactive reference at `/docs`. Two optional headers apply everywhere:
 | `GET` | `/api/health` | Liveness check; used by the frontend's wake-up state |
 | `GET` | `/api/me` | Learner and current stats, with hearts synced |
 | `PATCH` | `/api/me` | Edit display name, avatar and daily goal |
-| `GET` | `/api/courses` | Every course on offer, each with this learner's progress |
-| `POST` | `/api/courses/{id}/select` | Switch to another language |
 | `GET` | `/api/course` | The active path with this learner's progress folded in |
 | `GET` | `/api/profile` | Stats, achievements with progress, last 7 days of XP |
 | `GET` | `/api/leaderboard` | Live ranking across all seeded users |
@@ -183,29 +181,11 @@ lesson refuses to pay out.
 
 ## Seeded data
 
-Four courses — Spanish, French, German and Hindi — each with three units and
-seven skills. The learner starts on Spanish already partway in: first skill
-complete with a crown, second half done, XP spread over the previous few days,
-so the path, the profile chart and the streak are populated the moment the app
-opens. Five rivals sit on the leaderboard above and below.
-
-The brief only asks for one seeded language. The reason there are four is that
-`seed.py` generates a course from a `LanguageSpec` — a block of vocabulary,
-sentences and fill-in-the-blank templates — and the unit and skill structure is
-defined once for all of them. Adding a fifth language is roughly thirty lines
-of words with no new code, which is the property worth demonstrating rather
-than the languages themselves.
+One Japanese course with three units and seven skills. The learner starts partway in — first skill complete with a crown, second half done, XP spread over the previous few days — so the path, the profile chart and the streak are all populated the moment the app opens. Five rivals sit on the leaderboard above and below.
 
 Reseed at any time with `python -m app.seed` (drops and rebuilds).
 
-### Switching languages
 
-The flag in the top bar opens the course picker, exactly where Duolingo puts
-it. Switching resets nothing: progress is stored per skill and skills belong to
-a course, so `user_stats.active_course_id` is the only thing that changes and
-each path is found exactly as it was left. XP and streak stay global across
-courses — a simplification the real app makes differently, noted in
-ASSUMPTIONS.md.
 
 ### Editing your profile
 
@@ -235,10 +215,7 @@ says so explicitly rather than showing a silent spinner.
 
 ## What's mocked
 
-Gems, the Super subscription, friends, speaking exercises and multiple
-languages are placeholders; the leaderboard's rivals are seeded. Every one of
-these, and the reasoning behind where the line was drawn, is written up in
-[ASSUMPTIONS.md](./ASSUMPTIONS.md).
+
 
 ---
 
