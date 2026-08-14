@@ -1,6 +1,6 @@
 # Duolingo Clone
 
-A full-stack recreation of Duolingo's learning experience: a Japanese languagecourse with a winding skill path and lock/unlock progression,alesson player with five exercise types, and the gamification layer — hearts,XP, streaks, crowns, a daily goal and a leaderboard — that turns a quiz intosomething you come back to.
+A full-stack recreation of Duolingo's learning experience: a Japanese language course with a winding skill path and lock/unlock progression,alesson player with five exercise types, and the gamification layer — hearts,XP, streaks, crowns, a daily goal and a leaderboard — that turns a quiz intosomething you come back to.
 
 **Live demo:** https://duolingo-clone-amber.vercel.app
 **Repository:** https://github.com/Saaswati/Duolingo-clone
