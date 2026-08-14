@@ -182,8 +182,7 @@ lesson refuses to pay out.
 ## Seeded data
 
 One Japanese course with three units and seven skills. The learner starts partway in — first skill complete with a crown, second half done, XP spread over the previous few days — so the path, the profile chart and the streak are all populated the moment the app opens. Five rivals sit on the leaderboard above and below.
-
-Reseed at any time with `python -m app.seed` (drops and rebuilds).
+Reseed at any time with python -m app.seed (drops and rebuilds).
 
 
 
